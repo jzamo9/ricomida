@@ -7,6 +7,17 @@ $(document).ready (function (){
     //     $(this).hide();
     // });
 
+    $("a").click(function(){
+        var gato = this.hash
+
+        $("html, body").animate(
+            {
+            scrollTop: $(gato).offset().top -80
+        },
+        1000
+        )
+    })
+
     $("#titulo-1").dblclick(function(){
         $(this).css("color", "red");
     })
